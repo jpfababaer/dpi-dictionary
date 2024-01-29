@@ -1,0 +1,36 @@
+<div class="wod_container round_border card_heading card_background">
+
+  <div class="wod_header">
+    <h3>WORD OF THE DAY<h3>
+  </div>
+
+  <div class="word_header_container">
+  
+    <div class="word_search">
+    <h1> <%= @rand_word %></h1>
+    </div>
+
+    <div class="pronunciation highlight">
+    <span>[<%= @pronounciation %>]</span>
+    </div>
+
+  </div>
+  
+  <div class="word_descrip_box card_paragraph">
+
+    <div class="part_of_speech highlight">
+    <span><%= @part_of_speech %></span>
+  </div>
+
+  <ol>
+  <% @short_def_display.each do |definition|%>
+
+    <div class="definition">
+      <li><%= definition  %>;</li>
+    </div>
+    
+  <% end %>
+  </ol>
+  </div>
+  
+</div>

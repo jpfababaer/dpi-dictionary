@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sinatra Template</title>
+    <title>DPI Dictionary</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <style>
+      body {
+        font-family: Georgia;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        
+        background: #fffffe;
+      }
+
+      .headline {
+        background: #0f0e17;
+      }
+
+      .card_background {
+        background: #0f0e17;
+      }
+
+      .card_heading {
+        color: #fffffe;
+      }
+
+      .card_paragraph {
+        color: #a7a9be;
+      }
+
+      .highlight {
+        color: #ff8906;
+      }
+
+      .round_border {
+        border-radius: 10px;
+      }
+
+      #web_title {
+        padding-left: 100%;
+        padding-right: 100%;
+        margin-bottom: 50px;
+
+        width: 330px;
+  
+      }
+
+      a:link, a:visited {
+        text-decoration: none;
+        color: #fffffe;
+      }
+
+      .search_container {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+      }
+
+      #search_bar {
+        width: 600px;
+        height: 50px;
+        border-radius: 20px;
+      }
+      
+      .search_btn {
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        font-size: 18px;
+      }
+
+      .wod_container {
+        display: flex;
+        flex-direction: column;
+        width: 712.45px;
+        padding: 25px;
+      }
+
+      .word_header_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+      }
+
+      .pronunciation {
+        padding-left: 15px;
+      }
+
+      .definition {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .suggestion_container {
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      .suggestion {
+        margin-right: 7px;
+      }
+
+      .error_message {
+        color: #e53170;
+      }
+
+
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+      <header id="web_title" class="headline">
+        <h1><a href="/">DPI Dictionary.com</a></h1>
+      </header>
+
+      <div class="search_container">
+
+        <form action="/:word_results">
+          <label for="search_bar"></label>
+          <input type="text" name="search_bar" id="search_bar" placeholder="Search your word here...">
+
+          <button class="search_btn">Define!</button>
+        </form>
+
+      </div>
+
+      <%= yield %>
   </body>
 </html>

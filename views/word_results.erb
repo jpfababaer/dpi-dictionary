@@ -1,0 +1,59 @@
+<% if @status == "misspelled word"%>
+  <div>
+
+    <h4 class="error_message">A misspelling has occurred. Try these words:</h4>
+
+  </div>
+
+  <div class="suggestion_container">
+
+  <% @parsed_respMW.each do |word|%>
+
+    <div class="suggestion">
+      <p><%= word  %></p> 
+    </div>
+
+  <% end %>
+  </div>
+
+<% elsif @status == "invalid word"%>
+
+  <div class="error_message">
+    <h4>Error: <%=@error_message %></h4> 
+  </div>
+
+<% elsif @status == "ok"%>
+  <div class="wod_container round_border card_heading card_background">
+
+  <div class="word_header_container">
+  
+    <div class="word_search">
+    <h1> <%= @word_search %></h1>
+    </div>
+
+    <div class="pronunciation highlight">
+    <span>[<%= @pronounciation %>]</span>
+    </div>
+
+  </div>
+  
+  <div class="word_descrip_box card_paragraph">
+
+    <div class="part_of_speech highlight">
+    <span><%= @part_of_speech %></span>
+  </div>
+
+  <ol>
+  <% @short_def_display.each do |definition|%>
+
+    <div class="definition">
+      <li><%= definition  %>;</li>
+    </div>
+    
+  <% end %>
+  </ol>
+  </div>
+  
+</div>
+
+<% end %>
