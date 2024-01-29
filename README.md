@@ -1,3 +1,14 @@
+Things to improve: 
+
+1. 
+
+
+
+
+
+
+
+
 # sinatra-template
 
 Use this repository to create new Sinatra apps. 
