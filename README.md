@@ -1,4 +1,4 @@
-DPI Dictionary:
+DPI Dictionary: Hello
 
 This mini-project serves as a dictionary that give out definition(s) for words.
 
