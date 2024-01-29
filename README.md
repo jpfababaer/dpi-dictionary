@@ -1,13 +1,3 @@
-Things to improve: 
-
-1. 
-
-
-
-
-
-
-
 
 # sinatra-template
 

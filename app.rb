@@ -1,8 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
-require "sinatra/activerecord"
 require "http"
-require "json"
+
 
 #Homepage: includes search bar, word of the day, definitions of WOD
 get("/") do

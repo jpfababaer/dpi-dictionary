@@ -1,11 +1,6 @@
 require "./app"
 
 configure do
-  # setup a database connection
-  set(:database, { adapter: "sqlite3", database: "db/development.sqlite3" })
-end
-
-configure do
   # GitHub Pages and Render deployment
   set(:public_folder, "./")
 end
