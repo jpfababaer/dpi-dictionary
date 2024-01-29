@@ -1,5 +1,5 @@
 DPI Dictionary:
 
-This mini-project serves as a dictionary that gives out definitions for words you are curious about.
+This mini-project serves as a dictionary that give out definition(s) for words.
 
-Use the search bar to define a word you are curious about.
+Use the search bar to get definition(s) for the words you are would like to know about! 
